@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div class="gallery">
+  <div class="image" id="img1"><img src="image1.jpg" alt="Image 1"></div>
+  <div class="image" id="img2"><img src="image2.jpg" alt="Image 2"></div>
+  <div class="image" id="img3"><img src="image3.jpg" alt="Image 3"></div>
+  <!-- Add more images as needed -->
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+  <a class="next" onclick="changeImage(1)">&#10095;</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
