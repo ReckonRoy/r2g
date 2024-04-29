@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | R2G Funeral Parlour</title>
+  <style>
+
+    .container {
+      position: relative;
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .about {
+      padding: 40px 0;
+    }
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .about h2 {
+      font-size: 32px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+	.about ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	}
+	.about ul li {
+	font-size: 18px;
+	margin-bottom: 10px;
+        line-height: 40px;
+	}
+    .mission {
+      background-color: #fff;
+      color: #333;
+      padding: 40px 0;
+      text-align: center;
+    }
+    
+    #mission-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+	
+    .mission p.mission-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+    }
+    
+    @media screen and (min-width: 768px) {
+        #mission-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        }
+        
+        .mission-paragraph{
+        width: 40%;
+        }
+    }
+  </style>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header-component></header-component>
+  <hero-component></hero-component>
+  
+
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to R2G RAINNING GRACE FUNERAL PARLOUR (R2G), where community engagement is at the heart of everything we do. Founded in March 2013 by Director Lebelo Grace Matila, R2G aims to provide compassionate and professional funeral, cremation, and tombstone services while upholding values of mutual assistance, democracy, equity, and community engagement.</p>
+      <p>At R2G, we believe in:</p>
+      <ul>
+        <li><i class="fas fa-hand-holding-heart"></i> Affordable Services</li>
+        <li><i class="fas fa-compassion"></i> Compassionate Approach</li>
+        <li><i class="fas fa-users"></i> Community Involvement</li>
+        <li><i class="fas fa-user"></i> Personalized Care</li>
+        <li><i class="fas fa-chart-pie"></i> Financial Transparency</li>
+        <li><i class="fas fa-info-circle"></i> Being the leading resource for information and education about the value of funeral services and the important role of funeral service professionals</li>
+        <li><i class="fas fa-handshake"></i> Collaborating with like-minded professionals and organizations to study industry practices and future trends</li>
+        <li><i class="fas fa-balance-scale"></i> Fostering provision of services in accordance with the highest standards of professional ethics and integrity</li>
+        <li><i class="fas fa-chalkboard-teacher"></i> Advocating for primary and continuing professional education programs for funeral service professionals</li>
+        <li><i class="fas fa-gavel"></i> Representing the best interests of funeral service professionals to government and regulatory agencies</li>
+        <li><i class="fas fa-heart"></i> Championing the value of funerals, bereavement rites, ceremonies, and cemetery memorialization in the community</li>
+      </ul>
+      <p>Join us at R2G to experience compassionate care, community involvement, and personalized service during life's most challenging moments.</p>
+    </div>
+  </section>
+  <section class="mission">
+      <h2><a id="about-us-link">Our Mission</a></h2>
+    <div id="mission-container">
+        <p class="mission-paragraph">Our funeral parlor is dedicated to serving the community with excellence and integrity. Our overarching purpose is to provide invaluable resources, education, and support to the public regarding the significance of funeral services and the crucial role funeral service professionals play in ensuring dignified farewells through funeral, interment, and cremation services.</p>
+        <p class="mission-paragraph">We actively seek collaboration with like-minded professionals and organizations within the funeral service industry. Through the exchange of ideas and discussions on pertinent issues, we strive to stay abreast of industry practices and future trends, always aiming to elevate standards and improve service delivery for the benefit of our clients and the community.</p>
+        <p class="mission-paragraph">Central to our mission is fostering a culture of professionalism and ethical conduct within our profession. We are committed to upholding the highest standards of integrity and proficiency in all aspects of our work, including the planning and execution of funerals, bereavement rites, ceremonies, and related services.</p>
+        <p class="mission-paragraph">As advocates for professional development, we prioritize the ongoing education and training of our staff. We offer comprehensive programs and seminars designed to equip funeral service professionals with the knowledge and skills necessary to provide exceptional service and support to grieving families. Furthermore, we actively encourage individuals to pursue careers in the funeral service profession, recognizing the meaningful impact they can have on their communities.</p>
+        <p class="mission-paragraph">In our interactions with governmental and regulatory bodies, we represent the interests of the funeral service profession. We advocate for legislation and regulations that support and enhance our ability to serve our clients with compassion and professionalism, while also safeguarding the integrity of our profession.</p>
+        <p class="mission-paragraph">Finally, we are dedicated to championing the value of traditional funeral practices and the importance of cemetery memorialization within our community. Through our work, we seek to honor the lives of the deceased and preserve their memory, while also celebrating the historical significance and community heritage embodied in our cemeteries.</p>
+  </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 R2G Funeral Parlour. All rights reserved.</p>
+    </div>
+  </footer>
+    <script src="./assets/js/components/header-component.js"></script>
+    <script src="./assets/js/components/hero-component.js"></script>
+</body>
+</html>

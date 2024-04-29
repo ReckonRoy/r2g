@@ -10,106 +10,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
-
-
   <style>
-    /* Reset styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 50px; /* Adjust the width of your logo */
-  margin-right: 10px;
-}
-
-.logo span {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.nav-links {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-}
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links li:last-child {
-  margin-right: 0;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #ff9900;
-}
-
-	/* Hero section styling */
-	.hero-section {
-	  position: relative;
-	  height: 100vh; /* Set the height to full viewport height */
-	  background-image: url('funeral_bg.jpg');
-	  background-size: cover;
-	  background-position: center;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  text-align: center;
-	}
-
-	.hero-section .content {
-	  position: absolute;
-	  top: 50%; /* Aligning the content vertically */
-	  left: 50%; /* Aligning the content horizontally */
-	  transform: translate(-50%, -50%);
-	  color: #fff;
-	}
-
-	.hero-section h1,
-	.hero-section p {
-	  margin-bottom: 20px;
-	}
-
     .section {
       padding: 100px 0;
     }
 	
-
     .content {
       max-width: 1200px;
       margin: 0 auto;
@@ -118,13 +23,6 @@ nav {
 
     h1, h2 {
       color: #333;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 50px 0;
     }
 
     /* Additional styling */
@@ -146,40 +44,18 @@ nav {
       margin-bottom: 20px;
     }
 
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-      nav ul li {
-        display: block;
-        margin-bottom: 10px;
-      }
-
-      nav ul li a {
-        display: block;
-        padding: 10px 0;
-      }
-
       .content {
         padding: 0 20px;
       }
-    }
 
     /* Form Styles */
     /* Grid layout for contact section */
 .contact-grid {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: stretch;
-  border: 1px solid yellow;
   width: 100%;
-}
-
-.contact-grid > div {
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-grid form {
@@ -246,63 +122,463 @@ nav {
 	#contact-child-grid{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 10px;
+		gap: 10px;
+                font-size: 18px;
 	}
 	
 	#address-div{
-		background-color: white;
+		background-color: whitesmoke;
 		height: 150px;
 		box-sizing: border-box;
 		padding: 15px 0;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                font-size: 18px;
 	}
 	
 	#email-div{
-		background-color: white;
 		box-sizing: border-box;
 		padding: 15px 0;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                background-color: whitesmoke;
 	}
 	
 	#contact-div{
-		background-color: white;
+		background-color: whitesmoke;
 		box-sizing: border-box;
 		padding: 15px 0;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	}
+        
+        .vision-container {
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: 1fr;
+			width: 80%;
+		}
+
+		.flex-container {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 20px;
+                    display: flex; /* Add this line to make the sections display in a row */
+                    flex-direction: column; /* Add this line to allow wrapping of sections */
+                    justify-content: space-between; /* Add this line to evenly distribute the sections */
+		}
+	
+		.flex-item{
+			margin-bottom: 30px;
+			padding: 10px;
+			border: 1px solid #ddd; /* Add a border for visual separation */
+			box-sizing: border-box; /* Ensure padding is included in the width */
+		}
+		
+		
+		
+		#values-h2{
+			grid-column: 1/3;
+		}
+                
+    #values-section{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    #values-article{
+        flex-basis: 100%;
+    }
+
+    #video-ad{
+     flex-basis: 100%; 
+     width: 700px;
+    }
+
+		h2 {
+			color: #333;
+		}
+
+		footer {
+      /*background-image: url();*/
+      position: relative;
+			margin-top: 30px;
+      width: 100%;
+		}
+
+    footer > img{
+      display: none;
+      width: 100%;
+    }
+
+    #footer-note{
+      position: absolute;
+      top: 0;
+      color: whitesmoke;
+      background-color: black;
+      opacity: 0.8;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
+
+    .footer-content {
+      position: absolute;
+      width: 100%;
+      top: 6rem;
+      display: flex;
+      text-align: left;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+
+    #offices-section{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-weight: normal;
+      font-size: 12px;
+      color: lightgray;
+      background-color: black;
+      opacity: 0.8;
+      border-radius: 5px;
+      flex-basis: 100%;
+    }
+
+    #offices-section h2{
+      font-size: 1rem;
+      color: gray;
+    }
+
+    #offices-header{
+      grid-column: span 2;
+      color:gray;
+      font-size: 2rem;
+      font-weight: normal;
+    }
+
+    .footer-nav{
+      display: block;
+      font-weight: bold;
+      flex-basis: 100%;
+      font-size: 12px;
+      line-height: 2rem;
+      gap: 10px;
+      background-color: black;
+      opacity: 0.8;
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+
+    .footer-nav > p{
+      color: white;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    .footer-nav-ul{
+      display: none;
+    }
+
+		/* Responsive styles */
+		@media screen and (min-width: 768px) {
+			.vision-container {
+				padding: 10px;
+			}
+                        
+      .flex-container {
+          max-width: 100%;
+          margin: 0 auto;
+          padding: 20px;
+          display: flex; /* Add this line to make the sections display in a row */
+          flex-direction: row;
+          flex-wrap: wrap; /* Add this line to allow wrapping of sections */
+          justify-content: space-between; /* Add this line to evenly distribute the sections */
+      }
+
+      #values-section{
+        flex-wrap: nowrap;
+    }
+      
+      .flex-item{
+          margin-bottom: 30px;
+          width: 40%; /* Adjust the width of sections to fit two in a row */
+          padding: 10px;
+          border: 1px solid #ddd; /* Add a border for visual separation */
+          box-sizing: border-box; /* Ensure padding is included in the width */
+      }
+      
+      .values-container {
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr;
+          width: 80%;
+      }
+
+      #offices-section{
+      font-size: 18px;
+    }
+
+      .footer-nav{
+      display: block;
+      font-weight: bold;
+      flex-basis: 100%;
+      font-size: 18px;
+      line-height: 2rem;
+      gap: 10px;
+      background-color: black;
+      opacity: 0.8;
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+
+    .footer-nav > p{
+      color: white;
+      padding: 5px 12px;
+    }
+
+    }
+
+    /* Responsive styles */
+		@media screen and (min-width: 914px) {
+
+    footer > img{
+      display: block;
+      width: 100%;
+    }
+
+    .footer-content {
+      position: absolute;
+      width: 100%;
+      top: 10rem;
+      margin: 0;
+      display: flex;
+      text-align: left;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+
+    #offices-section{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 2rem;
+      gap: 10px;
+      color: lightgray;
+      background-color: black;
+      opacity: 0.8;
+      border-radius: 5px;
+      padding: 0 10px;
+      flex-basis: 100%;
+    }
+
+    #offices-section h2{
+      font-size: 2rem;
+      color: gray;
+    }
+
+    #offices-header{
+      grid-column: span 2;
+      color:gray;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    .footer-nav{
+      display: block;
+      font-weight: bold;
+      flex-basis: 100%;
+      font-size: 18px;
+      line-height: 2rem;
+      gap: 10px;
+      background-color: black;
+      opacity: 0.8;
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+
+    .footer-nav-ul{
+      list-style: none;
+    }
+
+    .footer-nav-li{
+      line-height: 50px;
+    }
+
+    .footer-nav-li a{
+      text-decoration: underline;
+      color: white;
+      padding: 5px 12px;
+    }
+
+    .footer-nav > p{
+      color: white;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    .footer-nav-li a:hover{
+      text-decoration: none;
+      background-color: gray;
+      color: white;
+      border-radius: 5px;
+    }
+		}
+
+    /* Responsive styles */
+		@media screen and (min-width: 1080px) {
+
+footer > img{
+  display: block;
+  width: 100%;
+}
+
+.footer-content {
+  position: absolute;
+  width: 100%;
+  top: 5rem;
+  margin: 0;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+#offices-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5rem;
+  gap: 10px;
+  color: lightgray;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 0 10px;
+  flex-basis: 40%;
+}
+
+#offices-section h2{
+  font-size: 1.5rem;
+  color: gray;
+}
+
+#offices-header{
+  grid-column: span 2;
+  color:gray;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.footer-nav{
+  display: block;
+  font-weight: bold;
+  flex-basis: 30%;
+  font-size: 18px;
+  line-height: 2rem;
+  gap: 10px;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 0 10px;
+  align-self: flex-start;
+  color: white;
+  padding: 5px 12px;
+}
+
+.footer-nav-ul{
+  display: block;
+  list-style: none;
+}
+
+.footer-nav-li{
+  line-height: 50px;
+}
+
+.footer-nav-li a{
+  text-decoration: underline;
+  color: white;
+  padding: 5px 12px;
+}
+
+.footer-nav > p{
+  color: white;
+  padding: 5px 12px;
+}
+
+.footer-nav-li a:hover{
+  text-decoration: none;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+}
+}
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-    <div class="logo">
-      <img src="your_logo.png" alt="R2G FUNERALS Logo">
-      <span>R2G FUNERALS</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-  </nav>
-  </header>
+    <header-component></header-component>
+    <hero-component></hero-component>
 
-  <section id="home" class="hero-section">
-    <div class="content">
-      <h1>Welcome to R2G Funeral Parlor</h1>
-      <p>Your trusted partner in honoring the lives of your loved ones.</p>
-      <img src="https://via.placeholder.com/600x400" alt="Funeral Parlor" class="img-fluid rounded">
-    </div>
-  </section>
+    <div class="vision-container">
+        <section id="vision">
+            <h2>Our Vision</h2>
+            <p>Our aspiration is clear: to be acknowledged as the epitome of success in the funeral service industry.
+                We tirelessly pursue this vision by adhering to a set of fundamental values that guide our every action.</p>
+            <p><a href="./aboutus.html#about-us-link">read more</a></p>
+            
+        </section>
 
-  <section id="about" class="section">
-    <div class="content">
-      <h2>About Us</h2>
-      <p>At R2G Funeral Parlor, we understand the importance of honoring the lives of your loved ones with dignity and respect. With years of experience in the funeral industry, our compassionate team is here to guide you through every step of the funeral arrangement process.</p>
-      <img src="https://via.placeholder.com/600x400" alt="About Us" class="img-fluid rounded">
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>At the heart of our mission lies a deep-seated commitment to our clients. We believe it is our solemn duty to fearlessly uphold their interests, providing them with innovative burial solutions that meet their unique needs. With a focus on timely service and unwavering support throughout their bereavement, we strive to exceed expectations at every turn.</p>
+        </section>
+
+		<div class="flex-container">
+			<div id="change" class="flex-item">
+				<h2>Adapting to Change</h2>
+				<p>We understand that the funeral care landscape is constantly evolving. That's why we have adapted our approach to meet the changing needs of our customers. Our mission remains steadfast: to provide quality funeral services at fair and reasonable prices, irrespective of class, race, or ethnicity.</p>
+			</div>
+
+			<div id="empowerment" class="flex-item">
+				<h2>Empowering Families</h2>
+				<p>We believe that knowledge is power. Every family deserves access to free information and consultation to make informed decisions during the funeral planning process. Our team is dedicated to offering invaluable guidance, ensuring that our clients feel supported every step of the way.</p>
+			</div>
+			<div id="expertise" class="flex-item">
+				<h2>Unparalleled Expertise</h2>
+				<p>When you choose R2G, you can rest assured that you are receiving the highest quality funeral service available today. With three licensed funeral directors and two funeral preplanning consultants boasting over 50 years of combined experience, our team is equipped to personalize funeral services to meet your unique needs.</p>
+			</div>
+			<div id="tribute" class="flex-item">
+				<h2>A Lasting Tribute</h2>
+				<p>Whether you opt for a traditional burial or cremation service, we offer a range of merchandise options to create a meaningful tribute for your loved one. From elegant caskets to beautiful urns, we provide products to suit individual preferences and budgets.</p>
+			</div>
+
+			<div id="integrity" class="flex-item">
+				<h2>Integrity and Professionalism</h2>
+				<p>Above all, we conduct ourselves with honesty and integrity in all our dealings. We strive to earn and maintain the trust of our clients, colleagues, and the wider community through sincerity, responsibility, and accountability.</p>
+			</div>
+		</div>
     </div>
-  </section>
+	
+	<div class="values-container">
+		<h2 id="values-h2">Value Statement</h2>
+		<div id="values-section">
+      <div id="values-article">
+        <p>At our funeral home, we uphold principles of honesty and integrity in all our interactions with clients.
+        We are deeply committed to providing bereaved families and the community at
+        large with quality and style, ensuring that each individual receives the utmost care and respect during their
+        time of need. Our aim is to foster trust by consistently demonstrating sincerity, responsibility, and accountability in our actions.
+        We conduct ourselves with professionalism at all times, understanding that our conduct reflects not only on ourselves but also on the reputation of our establishment.
+        </p>
+        <p>
+        While we acknowledge the presence of other funeral homes in the area, we take pride in the fact that families who choose our services,
+        whether in times of loss or for pre-arrangement, consistently encounter our exceptionally high standards of service.
+        These standards encompass transparency in business administration and service delivery, ensuring that our clients receive nothing less than the best in their time of need.
+        </p>
+      </div>
+      <iframe id="video-ad" width="980" height="720" src="https://www.youtube.com/embed/IQOS2jNo-Rs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
 
   <section id="gallery" class="section">
     <div class="content">
@@ -377,15 +653,74 @@ nav {
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.237752485652!2d27.810343274822454!3d-26.383505471299305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95aedc0fcdc2bd%3A0x47ab6a75cfff6d4!2s2nd%20Ave%2C%20Lawley%2C%201824!5e0!3m2!1sen!2sza!4v1713966511028!5m2!1sen!2sza" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <footer>
-    <div class="content">
-      <p>Address: 7931 Paul Street, Lawley Extention 2, 1830 | Email: r2g.mercy@gmail.com | Contact: 011 07 9929</p>
-      <p>Follow Us: <i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i></p>
+    <img src="./assets/img/footer/footer.png">
+    <div class="footer-content">
+      <div id="offices-section">
+        <h2 id="offices-header">Offices</h2>
+        <div>
+          <h2>Main Office</h2>
+            <ul>
+              <li>7931 Paul Street</li>
+                <li>Lawley Extention 2, 1830</li>
+                <li>011 057 9929</li>
+                <li>063 261 2494</li>
+                <li>083 990 3258</li>
+                <li>084 641 6765</li>
+              </ul>
+        </div>
+
+        <div>
+          <h2>Mortuary Office</h2>
+            <ul>
+              <li>No 2 Boundry Office</li>
+                <li>Cnr, Kimberly Eldorado Park</li>
+                <li>Nancefield Industrial Soweto</li>
+                <li>010 655 857</li>
+                <li>076 302 1738</li>
+                <li>083 990 3258 | 084 641 6765</li>
+              </ul>
+        </div>
+
+        <div>
+          <h2>Kokotela Office</h2>
+            <ul>
+              <li>Semelane Cnr Kereke Street</li>
+                <li>Lawley Kokotela</li>
+                <li>083 990 3258</li>
+                <li>084 641 6765</li>
+              </ul>
+        </div>
+
+        <div>
+          <h2>Golden highway Office</h2>
+            <ul>
+              <li>Phumla Mxhashashi, Around Shoprite</li>
+                <li>Lawley Extention 2, 1830</li>
+                <li>010 065 2269</li>
+                <li>083 990 3258</li>
+                <li>084 641 6765</li>
+              </ul>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div>
+            <ul class="footer-nav-ul">
+              <li class="footer-nav-li"><a href="./index.html">Home</a></li>
+              <li class="footer-nav-li"><a href="./aboutus.html">About Us</a></li>
+              <li class="footer-nav-li"><a href="./gallery.html">Gallery</a></li>
+              <li class="footer-nav-li"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <p>Follow Us: <i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i></p>
+      </div>
     </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./assets/js/components/header-component.js"></script>
+  <script src="./assets/js/components/hero-component.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

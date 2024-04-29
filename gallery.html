@@ -4,24 +4,199 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
-  <link rel="stylesheet" href="./styles.css">
+  <style>
+      .row{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 80%;
+          margin: 50px auto;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          box-sizing: border-box;
+      }
+      
+      .row > .column {
+        flex: 1
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .gallery-header
+      {
+          width: 100%;
+          text-align: center;
+          background-color: gray;
+          border-bottom: 2px solid black;
+          padding: 10px 0;
+          color: skyblue;
+          font-weight: bolder;
+      }
+
+      /* Create four equal columns that floats next to eachother */
+      .column {
+        padding: 0;
+        width: 25%;
+        border: 1px solid black;
+      }
+      
+      .img-prop{
+          width: 100%;
+      }
+      
+      .th-nails{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          width: 100%;
+      }
+      
+      .column-thumbnails > img{
+          width: 80%;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 10px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      /* The Close Button */
+      .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* Hide the slides by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: gray;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* Caption text */
+      .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      img.demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+      img.hover-shadow {
+        transition: 0.3s;
+      }
+
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+   </style>
 </head>
 <body>
+    <div id="wrapper">
+        <header-component></header-component>
+        <hero-component></hero-component>
+        <casket-component></casket-component>
+        <funarr-component></funarr-component>
+    </div>
 
-<div class="gallery">
-  <div class="image" id="img1"><img src="image1.jpg" alt="Image 1"></div>
-  <div class="image" id="img2"><img src="image2.jpg" alt="Image 2"></div>
-  <div class="image" id="img3"><img src="image3.jpg" alt="Image 3"></div>
-  <!-- Add more images as needed -->
+ 
+  <!-- Images used to open the lightbox -->
+<div class="row">
+    <h2 class="gallery-header">Coffins</h2>
+    <div class="column">
+      <img class="img-prop hover-shadow" src="./assets/img/gallery/coffins/icons/coffin1-icon.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img class="img-prop hover-shadow" src="./assets/img/gallery/coffins/icons/coffin1-icon.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+    </div>
 </div>
+  
 
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImg">
-  <a class="prev" onclick="changeImage(-1)">&#10094;</a>
-  <a class="next" onclick="changeImage(1)">&#10095;</a>
-</div>
 
-<script src="script.js"></script>
+  <script src="./assets/js/components/header-component.js"></script>
+  <script src="./assets/js/components/hero-component.js"></script>
+  <script src="./assets/js/components/casket-component.js"></script>
+  <script src="./assets/js/components/funarr-component.js"></script>
 </body>
 </html>
