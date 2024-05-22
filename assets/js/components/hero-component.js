@@ -143,7 +143,9 @@ customElements.define("hero-component", class extends HTMLElement {
               <div class="overlay"></div>	  
               <div class="content">
                 <h1>R2G Funeral Parlor</h1>
-                <p>At R2G Funeral Parlor, we understand the importance of honoring the lives of your loved ones with dignity and respect. With years of experience in the funeral industry, our compassionate team is here to guide you through every step of the funeral arrangement process.</p>
+                <p>At R2G Funeral Parlor, we understand the importance of honoring the lives of your loved ones with dignity and respect. 
+                With years of experience in the funeral industry, our compassionate team is here to guide you through every step of the 
+                funeral arrangement process.</p>
               </div>
                       <img src="./assets/img/slides/slide3.jpeg" alt="About Us" class="img-fluid rounded"></img>
             </div>

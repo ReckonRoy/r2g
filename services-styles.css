@@ -1,0 +1,72 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Apr 29, 2024, 12:17:18 PM
+    Author     : Le-Roy
+*/
+ /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    
+    #wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+
+    section {
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+
+    section h2 {
+      color: #333;
+    }
+
+    section ul, section ol {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      list-style: none;
+    }
+    
+    footer{
+        width: 100%;
+    }
+    
+    footer > img {
+        width: 100%;
+    }
+    
+    footer > p{
+        text-align: center;
+    }

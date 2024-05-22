@@ -55,6 +55,7 @@ customElements.define("header-component", class extends HTMLElement {
 
                 .nav-links li {
                     margin-right: 20px;
+                    font-size: 12px
                 }
 
                 .nav-links li:last-child {
@@ -87,15 +88,14 @@ customElements.define("header-component", class extends HTMLElement {
         
                 #l-c{
                     display: flex;
-                    gap: 2em;
+                    flex-direction: column;
                     align-items: center;
                 }
         
                 #l-c > img{
-                    width: 350px;
-                    height: 150px;
+                    width: 100%;
+                    flex-basis: 100%;
                 }
-                
                 #contacts-ul{
                     display: flex;
                     flex-direction: column;
@@ -109,6 +109,7 @@ customElements.define("header-component", class extends HTMLElement {
                     border-radius: 5px;
                     padding: 3px;
                     box-sizing: border-box;
+                    font-size: 12px;
                 }
         
                 ul{
@@ -126,10 +127,15 @@ customElements.define("header-component", class extends HTMLElement {
         
                 @media screen and (min-width: 768px) {
                     #info-wrapper{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    font-size: 18px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        font-size: 18px;
+                    }
+        
+                    #l-c{
+                        flex-direction: row;
+                        gap: 2em;
                     }
         
                     #l-c > img{
@@ -153,7 +159,7 @@ customElements.define("header-component", class extends HTMLElement {
                     <ul>
                         <li>Monday-Friday: <strong>8AM - 5PM</strong></li>
                         <li>Saturday: <strong>8AM - 2:30PM</strong></li>
-                        <li>Sunday: <strong id="sunday">Closed</strong></li>
+                        <li>Sunday: <strong id="sunday">Emergency</strong></li>
                     <ul>
                 </div>
             </div>
@@ -164,6 +170,7 @@ customElements.define("header-component", class extends HTMLElement {
             </div>
             <ul class="nav-links">
               <li><a href="./index.html">Home</a></li>
+              <li><a href="./services.html">Services</a></li>
               <li><a href="./aboutus.html">About Us</a></li>
               <li><a href="./gallery.html">Gallery</a></li>
               <li><a href="#contact">Contact Us</a></li>
